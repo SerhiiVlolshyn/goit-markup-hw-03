@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <!--Начало шапки-->
+    <header>
+        <nav> <!--Лого сайта-->
+        <a class="logo" href="./">Web<span class="logotop">Studio</span></a>
+        <ul class="navigation list"> <!--Панель навигации-->
+            <li><a class="current header-link" href="./">Студия</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li><a class="header-link" href="./portfolio.html">Портфолио</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li><a class="header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
+        </ul>
+        </nav>
+        <ul class="contacts list"><!--строка контактов--> 
+            <li><a href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38096 111 11 11</a></li>
+        </ul>
+    </header>
+    <!--Конец шапки-->
+
+    <main>
+    <!--Перый блок-->
+    <section class="banner">
+        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="button primary" type="button"> Заказать услугу</button>
+    </section>
+    <!-- конец первого блока начало второго-->
+    <section class="advantages">
+        <ul class="list">
+            <li><h3>Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+            <li><h3>Пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+            <li><h3>Планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>   
+            <li><h3>Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+        </ul>
+        </section>
+        <section class="abought-work">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="list">
+            <li><img src="./images/tablet.jpg" alt="Монитор на фоне планшета. Руки на маковской клавиатуре печатают текст"></li>
+            <li><img src="./images/colors.jpg" alt="Смартфон держится в руках, на фоне ноутбук с тремя минималистичными изображениями смартфона. На корпусе ноутбкуа ещё одно распечатанное изображениею"></li>
+            <li><img src="./images/devices.jpg" alt="На планшете изображена палитра цветов с гексогональными ячейками. На фоне техника корпорации apple."></li>
+        </ul>
+    </section>
+    <!-- Конец второго блока, начало команды-->
+    <section class="team odd-section">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list">
+            <li><img src="./images/product-designer.jpg" alt="Бородатый мужчина в очках в коричневой рубашке">
+            <h3>Игорь Демьяненко</h3><p>Product Designer</p></li>
+            <li><img src="./images/fe-dev.jpg" alt="Миловидная крашеная блондинка в прямоугольных очках">
+            <h3>Ольга Репина</h3><p>Frontend Developer</p></li>
+            <li><img src="./images/marketing.jpg" alt="Молодой человек в рубашке и с хитрой улыбкой. Единственный из всех без очков">
+            <h3>Николай Тарасов</h3><p>Marketing</p></li>
+            <li><img src="./images/ui-designer.jpg" alt="Молодой бородатый человек с неоднозначной улыбкой и в круглых очках">
+            <h3>Михаил Ермаков</h3><p>UI Designer</p></li>
+        </ul>
+    </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <a class="logo" href="/">Web<span class="logobot">Studio</span></a>
+        <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contacts list">
+        <li><a href="mailto:info@example.com">info@example.com</a></li>
+        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+        </ul>
+    </footer>
+    <!--Конец подвала-->
+</body>
+</html>

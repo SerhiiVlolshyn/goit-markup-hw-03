@@ -1,0 +1,223 @@
+:root {
+/* База */
+
+  --white-color: #ffffff;
+
+/* Задники */
+  --important-background-color: #2f303a;
+  --odd-section-background-color: #f5f4fa;
+  --inactive-background-color: #f5f4fa;
+  --main-bg-color: var(--white-color);
+
+
+/* Лого */
+  --logo-bottom: var(--white-color);
+  --logo-top: #000000;
+  --logo-color: #2196f3;
+
+/* Текст */
+  --main-text-color: #212121;
+  --regular-text-color: #757575;
+
+  --footer-link-color: #ffffff99;
+  --header-link-color: #212121;
+
+  --pointer: #2196f3;
+
+  --letter-spreding-for-headers: 0.06em;
+}
+
+/* глобальные значения */
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  letter-spacing: 0.02em;
+}
+
+footer {
+  background-color: var(--important-background-color);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: var(--letter-spreding-for-headers);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* делаем красивое лого */
+
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.logotop {
+  color: var(--logo-top);
+}
+
+.logobot {
+  color: var(--logo-bottom);
+}
+
+/* заставляем адрес выглядеть правильно */
+
+address {
+  color: var(--white-color);
+  font-style: normal;
+}
+
+/* управляем внешностью списков */
+
+.list {
+  list-style: none;
+}
+
+/* управляем внешностью ссылок */
+
+header a {
+  font-weight: 500;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.contacts a {
+  color: var(--regular-text-color);
+  text-decoration: none;
+}
+
+footer a {
+  color: var(--footer-link-color);
+  text-decoration: none;
+}
+
+nav .current {
+  color: var(--pointer);
+}
+
+nav {
+  font-weight: 500;
+}
+
+/* позиционирование над элементом */
+
+a:hover,
+a:focus {
+  color: var(--pointer);
+}
+
+/* задаём цвет фона для нечётных элементов */
+
+.odd-section {
+  background-color: var(--odd-section-background-color);
+}
+
+/* кнопки */
+.button {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+button[type="button"] {
+  font-family: inherit
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+button[type="button"]:hover,
+button[type="button"]:focus {
+  background-color: var(--pointer);
+  color: var(--white-color);
+}
+
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--pointer);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: var(--letter-spreding-for-headers);
+}
+
+button.inactive {
+  color: var(--main-text-color);
+  background-color: var(--inactive-background-color);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Элементы индекса */
+
+.banner {
+  background-color: var(--important-background-color);
+}
+
+.advantages p {
+  color: var(--regular-text-color);
+  line-height: 1.71;
+}
+
+.advantages h3 {
+  text-transform: uppercase;
+}
+
+.team p {
+  color: var(--regular-text-color);
+}
+
+.team img {
+  width: 270px;
+}
+
+/* Элементы портфолио */
+
+.portfolio-innerheit a:visited {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.portfolio-innerheit h3 {
+  letter-spacing: var(--letter-spreding-for-headers);
+}
+
+.portfolio-innerheit p {
+  color: var(--regular-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio-innerheit h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: var(--letter-spreding-for-headers);
+}
+
+.portfolio-innerheit a {
+  text-decoration: none;
+}
