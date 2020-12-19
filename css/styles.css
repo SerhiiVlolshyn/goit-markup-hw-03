@@ -2,28 +2,31 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-/* База */
+  /* База */
 
   --white-color: #ffffff;
 
-/* Задники */
+  /* Задники */
   --important-background-color: #2f303a;
   --odd-section-background-color: #f5f4fa;
   --inactive-background-color: #f5f4fa;
   --main-bg-color: var(--white-color);
 
-
-/* Лого */
+  /* Лого */
   --logo-bottom: var(--white-color);
   --logo-top: #000000;
   --logo-color: #2196f3;
 
-/* Текст */
+  /* Текст */
   --main-text-color: #212121;
   --regular-text-color: #757575;
 
@@ -44,6 +47,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .hidden {
@@ -52,8 +56,9 @@ body {
 
 /* Общие элементы страниц */
 
+/* Головняк */
 header {
-  display: inline-block;
+  display: flex;
   align-items: center;
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
@@ -65,8 +70,52 @@ header {
   padding-left: 0;
 }
 
+.studio-link {
+  margin-left: 93px;
+  margin-top: 32px;
+}
+
+.portfolio-link {
+  margin-left: 50px;
+  margin-top: 32px;
+}
+
+.contacts-link {
+  margin-left: 50px;
+  margin-top: 32px;
+}
+
+.header-mail {
+  margin-left: 331px;
+}
+
+.header-tel {
+  margin-left: 50px;
+}
+
+/* Подвал */
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--important-background-color);
+}
+
+footer .logo {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.footer-contacts {
+  margin-left: 215px;
+  margin-top: 20px;
+}
+
+.footer-contacts li {
+  margin-top: 9px;
+}
+
+.footer-contacts:last-child {
+  margin-bottom: 60px;
 }
 
 .main-title {
@@ -77,11 +126,14 @@ footer {
   letter-spacing: var(--letter-spreding-for-headers);
   text-transform: uppercase;
   color: var(--white-color);
+  width: 696px;
+  height: 120px;
 }
 
 /* делаем красивое лого */
 
 .logo {
+  text-decoration: none;
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -89,6 +141,7 @@ footer {
   letter-spacing: 0.03em;
   margin-left: 215px;
   margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .logotop {
@@ -150,7 +203,6 @@ a:focus {
 
 .main-index-element:last-child {
   background-color: var(--odd-section-background-color);
-
 }
 
 /* кнопки */
@@ -161,8 +213,8 @@ a:focus {
   border: 0;
 }
 
-button[type="button"] {
-  font-family: inherit
+button[type='button'] {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -176,8 +228,8 @@ button[type="button"] {
   color: var(--white-color);
 }
 
-button[type="button"]:hover,
-button[type="button"]:focus {
+button[type='button']:hover,
+button[type='button']:focus {
   background-color: var(--pointer);
   color: var(--white-color);
   border-radius: 4px;
@@ -190,10 +242,10 @@ button[type="button"]:focus {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: var(--letter-spreding-for-headers);
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 
 button.inactive {
@@ -211,7 +263,19 @@ button.inactive {
 /* Элементы индекса */
 
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: var(--important-background-color);
+  height: 600px;
+}
+
+.advantages {
+  margin-top: 94px;
+  display: flex;
+  justify-content: center;
 }
 
 .advantages p {
@@ -229,9 +293,59 @@ button.inactive {
   justify-content: center;
 }
 
+.advantages-list-item {
+  margin-left: 30px;
+}
+
+.abought-work {
+  margin-top: 94px;
+}
+
+.work-list {
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
+.work-list li {
+  margin-left: 30px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 94px;
+  height: 648px;
+}
+
+.our-team {
+  margin-top: 94px;
+}
+
+.team-list {
+  margin-top: 30px;
+}
+
+.team li {
+  margin-left: 30px;
+  background-color: #ffffff;
+  width: 270px;
+  height: 368px;
+}
+
+.team h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .team p {
   display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--regular-text-color);
+  margin-top: 10px;
 }
 
 .team img {
@@ -251,6 +365,19 @@ button.inactive {
 }
 
 /* Элементы портфолио */
+
+.portfolio-innerheit {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.portfolio-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
 
 .portfolio-innerheit a:visited {
   text-decoration: none;

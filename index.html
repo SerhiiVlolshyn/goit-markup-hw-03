@@ -20,14 +20,14 @@
         <nav class="header-element"> <!--Лого сайта-->
         <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
         <ul class="header-element navigation list"> <!--Панель навигации-->
-            <li class="header-element"><a class="header-element current header-link" href="./">Студия</a></li>
-            <li class="header-element"><a class="header-element header-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-element"><a class="header-element header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li class="header-element studio-link"><a class="header-element current header-link" href="./">Студия</a></li>
+            <li class="header-element portfolio-link"><a class="header-element header-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-element contacts-link"><a class="header-element header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
         </ul>
         </nav>
         <ul class="contacts list header-element"><!--строка контактов--> 
-            <li class="header-element"><a class="header-element header-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-            <li class="header-element"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
+            <li class="header-element header-mail"><a class="header-element header-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+            <li class="header-element header-tel"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
         </ul>
     </header>
     <!--Конец шапки-->
@@ -50,15 +50,15 @@
     <!-- Конец второго блока начало третьего -->
     <section class="abought-work main-index-element">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul class="list work-list">
             <li><img src="./images/tablet.jpg" alt="Монитор на фоне планшета. Руки на маковской клавиатуре печатают текст"></li>
             <li><img src="./images/colors.jpg" alt="Смартфон держится в руках, на фоне ноутбук с тремя минималистичными изображениями смартфона. На корпусе ноутбкуа ещё одно распечатанное изображениею"></li>
             <li><img src="./images/devices.jpg" alt="На планшете изображена палитра цветов с гексогональными ячейками. На фоне техника корпорации apple."></li>
         </ul>
     </section>
     <!-- Конец третьего блока, начало команды-->
-    <section class="team odd-section main-index-element">
-        <h2 class="section-title">Наша команда</h2>
+    <section class="team main-index-element">
+        <h2 class="section-title our-team">Наша команда</h2>
         <ul class="list team-list">
             <li class="team-member"><img src="./images/product-designer.jpg" alt="Бородатый мужчина в очках в коричневой рубашке">
             <h3>Игорь Демьяненко</h3><p>Product Designer</p></li>
@@ -76,11 +76,13 @@
     <!-- Подвал -->
     <footer>
         <a class="logo" href="/">Web<span class="logobot">Studio</span></a>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <section class="footer-contacts">
+            <address>г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="contacts list">
         <li><a href="mailto:info@example.com">info@example.com</a></li>
         <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
+        </section>
     </footer>
     <!--Конец подвала-->
 </body>
