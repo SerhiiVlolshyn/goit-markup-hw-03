@@ -51,7 +51,12 @@ body {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 1px;
 }
 
 /* Общие элементы страниц */
@@ -59,32 +64,68 @@ body {
 /* Головняк */
 header {
   display: flex;
-  align-items: center;
+
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
-  width: 1600px;
-  padding-left: 215px;
+  width: 1170px;
+  margin: auto;
+}
+
+nav .current {
+  color: var(--pointer);
+}
+
+nav {
+  width: 530px;
+  font-weight: 500;
+}
+
+/* делаем красивое лого */
+
+.logo {
+  text-decoration: none;
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+header .logo {
+  margin: 24px 0 25px 0;
+}
+
+footer .logo {
+  margin-bottom: 0;
+  width: 145px;
+}
+
+.logotop {
+  color: var(--logo-top);
+}
+
+.logobot {
+  color: var(--logo-bottom);
 }
 
 .header-element {
-  display: inline-block;
+  display: flex;
   padding-left: 0;
 }
 
 .studio-link {
+  margin: auto 0;
   margin-left: 93px;
-  margin-top: 32px;
 }
 
 .portfolio-link {
+  margin: auto 0;
   margin-left: 50px;
-  margin-top: 32px;
 }
 
 .contacts-link {
+  margin: auto 0;
   margin-left: 50px;
-  margin-top: 32px;
-  padding: 32px, 0;
 }
 
 .header-mail {
@@ -123,34 +164,6 @@ footer {
   width: 696px;
 }
 
-/* делаем красивое лого */
-
-.logo {
-  text-decoration: none;
-  color: var(--logo-color);
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-}
-
-header .logo {
-  padding: 24px 0 25px 0;
-}
-
-footer .logo {
-  margin-bottom: 0;
-  width: 145px;
-}
-
-.logotop {
-  color: var(--logo-top);
-}
-
-.logobot {
-  color: var(--logo-bottom);
-}
-
 /* заставляем адрес выглядеть правильно */
 
 address {
@@ -186,14 +199,6 @@ footer a {
   text-decoration: none;
 }
 
-nav .current {
-  color: var(--pointer);
-}
-
-nav {
-  font-weight: 500;
-}
-
 /* позиционирование над элементом */
 
 a:hover,
@@ -213,6 +218,7 @@ a:focus {
   background-color: var(--main-bg-color);
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
 }
 
 button[type='button'] {
@@ -234,6 +240,7 @@ button[name='works-filter'] {
   border-radius: 4px;
   border: 0;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .current-button {
@@ -246,10 +253,8 @@ button[name='works-filter']:focus {
   background-color: var(--pointer);
   color: var(--white-color);
   border-radius: 4px;
-  border: 0;
-  padding-left: 22px;
-  padding-right: 22px;
-  height: 38px;
+  border: 0 solid #ffffff;
+  padding: 6px 22px;
 }
 
 .button.primary {
@@ -377,6 +382,10 @@ button.inactive {
 }
 
 /* Элементы портфолио */
+
+.portfolio-hr {
+  border: 1px solid #ececec;
+}
 
 .filtres {
   display: flex;
