@@ -20,34 +20,35 @@
         <nav class="header-element"> <!--Лого сайта-->
         <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
         <ul class="header-element navigation list"> <!--Панель навигации-->
-            <li><a class="header-element current header-link" href="./">Студия</a></li>
-            <li><a class="header-element header-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="header-element header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li class="header-element"><a class="header-element current header-link" href="./">Студия</a></li>
+            <li class="header-element"><a class="header-element header-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-element"><a class="header-element header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
         </ul>
         </nav>
-        <ul class="contacts list"><!--строка контактов--> 
-            <li><a class="header-element header-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-            <li><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
+        <ul class="contacts list header-element"><!--строка контактов--> 
+            <li class="header-element"><a class="header-element header-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+            <li class="header-element"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
         </ul>
     </header>
     <!--Конец шапки-->
 
-    <main>
+    <main class="main-index">
     <!--Перый блок-->
-    <section class="banner">
+    <section class="banner main-index-element">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button primary" type="button"> Заказать услугу</button>
     </section>
     <!-- конец первого блока начало второго-->
-    <section class="advantages">
-        <ul class="list">
-            <li><h3>Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
-            <li><h3>Пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-            <li><h3>Планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>   
-            <li><h3>Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+    <section class="advantages main-index-element">
+        <ul class="list advantages-list">
+            <li class="advantages-list-item"><h3>Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+            <li class="advantages-list-item"><h3>Пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+            <li class="advantages-list-item"><h3>Планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>   
+            <li class="advantages-list-item"><h3>Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
         </ul>
-        </section>
-        <section class="abought-work">
+    </section>
+    <!-- Конец второго блока начало третьего -->
+    <section class="abought-work main-index-element">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list">
             <li><img src="./images/tablet.jpg" alt="Монитор на фоне планшета. Руки на маковской клавиатуре печатают текст"></li>
@@ -55,17 +56,17 @@
             <li><img src="./images/devices.jpg" alt="На планшете изображена палитра цветов с гексогональными ячейками. На фоне техника корпорации apple."></li>
         </ul>
     </section>
-    <!-- Конец второго блока, начало команды-->
-    <section class="team odd-section">
+    <!-- Конец третьего блока, начало команды-->
+    <section class="team odd-section main-index-element">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-            <li><img src="./images/product-designer.jpg" alt="Бородатый мужчина в очках в коричневой рубашке">
+        <ul class="list team-list">
+            <li class="team-member"><img src="./images/product-designer.jpg" alt="Бородатый мужчина в очках в коричневой рубашке">
             <h3>Игорь Демьяненко</h3><p>Product Designer</p></li>
-            <li><img src="./images/fe-dev.jpg" alt="Миловидная крашеная блондинка в прямоугольных очках">
+            <li class="team-member"><img src="./images/fe-dev.jpg" alt="Миловидная крашеная блондинка в прямоугольных очках">
             <h3>Ольга Репина</h3><p>Frontend Developer</p></li>
-            <li><img src="./images/marketing.jpg" alt="Молодой человек в рубашке и с хитрой улыбкой. Единственный из всех без очков">
+            <li class="team-member"><img src="./images/marketing.jpg" alt="Молодой человек в рубашке и с хитрой улыбкой. Единственный из всех без очков">
             <h3>Николай Тарасов</h3><p>Marketing</p></li>
-            <li><img src="./images/ui-designer.jpg" alt="Молодой бородатый человек с неоднозначной улыбкой и в круглых очках">
+            <li class="team-member"><img src="./images/ui-designer.jpg" alt="Молодой бородатый человек с неоднозначной улыбкой и в круглых очках">
             <h3>Михаил Ермаков</h3><p>UI Designer</p></li>
         </ul>
     </section>

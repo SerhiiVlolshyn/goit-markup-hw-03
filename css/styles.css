@@ -46,9 +46,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Общие элементы страниц */
 
 header {
+  display: inline-block;
+  align-items: center;
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
   width: 1600px;
@@ -142,14 +148,17 @@ a:focus {
 
 /* задаём цвет фона для нечётных элементов */
 
-.odd-section {
+.main-index-element:last-child {
   background-color: var(--odd-section-background-color);
+
 }
 
 /* кнопки */
 .button {
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
+  border-radius: 4px;
+  border: 0;
 }
 
 button[type="button"] {
@@ -158,12 +167,21 @@ button[type="button"] {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
+  border: 0;
+}
+
+.current-button {
+  background-color: var(--pointer);
+  color: var(--white-color);
 }
 
 button[type="button"]:hover,
 button[type="button"]:focus {
   background-color: var(--pointer);
   color: var(--white-color);
+  border-radius: 4px;
+  border: 0;
 }
 
 .button.primary {
@@ -205,11 +223,30 @@ button.inactive {
   text-transform: uppercase;
 }
 
+.team .list,
+.abought-work .list {
+  display: flex;
+  justify-content: center;
+}
+
 .team p {
+  display: flex;
   color: var(--regular-text-color);
 }
 
 .team img {
+  width: 270px;
+}
+
+.advantages-list,
+.team-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-list-item,
+.team-member {
+  display: inline-block;
   width: 270px;
 }
 

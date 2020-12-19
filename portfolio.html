@@ -15,33 +15,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
-    <!--Начало шапки-->
-    <header>
-        <nav class="header-element">
-            <!--Лого сайта-->
-            <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
-            <ul class="header-element navigation list">
-                <!--Панель навигации-->
-                <li><a class="header-element header-link" href="./">Студия</a></li>
-                <li><a class="header-element current header-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header-element header-link" href="./">Контакты</a></li>
-                <!--Нужна ссылка/переделать на кнопку-->
-            </ul>
-        </nav>
-        <ul class="contacts list">
-            <!--строка контактов-->
-            <li><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
+<!--Начало шапки-->
+<header>
+    <nav class="header-element">
+        <!--Лого сайта-->
+        <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
+        <ul class="header-element navigation list">
+            <!--Панель навигации-->
+            <li class="header-element"><a class="header-element header-link" href="./">Студия</a></li>
+            <li class="header-element"><a class="header-element current header-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-element"><a class="header-element header-link" href="./">Контакты</a></li>
+            <!--Нужна ссылка/переделать на кнопку-->
         </ul>
-    </header>
-    <!--Конец шапки-->
+    </nav>
+    <ul class="contacts list header-element">
+        <!--строка контактов-->
+        <li class="header-element"><a class="header-element header-link"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="header-element"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a>
+        </li>
+    </ul>
+</header>
+<!--Конец шапки-->
 
 <main> <!-- Этот тег убирать вообще?-->
 <!--Начало портфолио-->
     <section>
         <h1 class="main-title hidden">Портфолио</h1>
     <ul class="filtres list">
-        <li><button type="button">Все</button></li>
+        <li><button class="current-button" type="button">Все</button></li>
         <li><button type="button">Веб-сайты</button></li>
         <li><button type="button">Приложения</button></li>
         <li><button type="button">Дизайн</button></li>
