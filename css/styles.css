@@ -30,7 +30,7 @@ html {
   --main-text-color: #212121;
   --regular-text-color: #757575;
 
-  --footer-link-color: #ffffff99;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
   --header-link-color: #212121;
 
   --pointer: #2196f3;
@@ -47,7 +47,8 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin: auto;
+  width: 1600px;
 }
 
 .hidden {
@@ -63,6 +64,7 @@ header {
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
   width: 1600px;
+  padding-left: 215px;
 }
 
 .header-element {
@@ -83,6 +85,7 @@ header {
 .contacts-link {
   margin-left: 50px;
   margin-top: 32px;
+  padding: 32px, 0;
 }
 
 .header-mail {
@@ -98,24 +101,16 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--important-background-color);
-}
-
-footer .logo {
-  margin-top: 60px;
-  margin-bottom: 0;
+  padding: 60px 0;
+  padding-left: 215px;
 }
 
 .footer-contacts {
-  margin-left: 215px;
   margin-top: 20px;
 }
 
 .footer-contacts li {
   margin-top: 9px;
-}
-
-.footer-contacts:last-child {
-  margin-bottom: 60px;
 }
 
 .main-title {
@@ -127,7 +122,6 @@ footer .logo {
   text-transform: uppercase;
   color: var(--white-color);
   width: 696px;
-  height: 120px;
 }
 
 /* делаем красивое лого */
@@ -139,9 +133,15 @@ footer .logo {
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
-  margin-left: 215px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+}
+
+header .logo {
+  padding: 24px 0 25px 0;
+}
+
+footer .logo {
+  margin-bottom: 0;
+  width: 145px;
 }
 
 .logotop {
@@ -155,6 +155,8 @@ footer .logo {
 /* заставляем адрес выглядеть правильно */
 
 address {
+  letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--white-color);
   font-style: normal;
 }
@@ -171,7 +173,8 @@ address {
   font-weight: 500;
   color: var(--main-text-color);
   text-decoration: none;
-  margin-top: 32px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contacts a {
@@ -285,7 +288,8 @@ button.inactive {
   align-items: center;
   text-align: center;
   background-color: var(--important-background-color);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .advantages {
@@ -349,10 +353,13 @@ button.inactive {
   height: 368px;
 }
 
+.team li:first-child {
+  margin-left: 0;
+}
+
 .team h3 {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 30px;
 }
 
@@ -406,6 +413,7 @@ button.inactive {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-innerheit a:visited {
