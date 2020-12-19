@@ -47,8 +47,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin: auto;
-  width: 1600px;
+  margin: 0;
 }
 
 .hidden {
@@ -234,9 +233,7 @@ button[name='works-filter'] {
   text-align: center;
   border-radius: 4px;
   border: 0;
-  padding-left: 22px;
-  padding-right: 22px;
-  height: 38px;
+  padding: 6px 22px;
 }
 
 .current-button {
@@ -244,8 +241,8 @@ button[name='works-filter'] {
   color: var(--white-color);
 }
 
-button[type='button']:hover,
-button[type='button']:focus {
+button[name='works-filter']:hover,
+button[name='works-filter']:focus {
   background-color: var(--pointer);
   color: var(--white-color);
   border-radius: 4px;
@@ -262,9 +259,12 @@ button[type='button']:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: var(--letter-spreding-for-headers);
+  padding: 10px 32px;
   margin-top: 30px;
-  width: 200px;
-  height: 50px;
+}
+
+.button.primary:hover,
+.button.primary:focus {
 }
 
 button.inactive {
@@ -331,15 +331,8 @@ button.inactive {
 }
 
 .team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 94px;
-  height: 648px;
-}
-
-.our-team {
-  margin-top: 94px;
+  padding: 94px 215px;
 }
 
 .team-list {
@@ -350,29 +343,25 @@ button.inactive {
   margin-left: 30px;
   background-color: #ffffff;
   width: 270px;
-  height: 368px;
 }
 
 .team li:first-child {
   margin-left: 0;
 }
 
-.team h3 {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.team p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--regular-text-color);
-  margin-top: 10px;
-}
-
 .team img {
   width: 270px;
+}
+
+.team .container {
+  padding: 30px 0;
+}
+
+.team p,
+.team h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-list,
