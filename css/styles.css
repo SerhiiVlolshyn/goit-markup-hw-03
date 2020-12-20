@@ -285,6 +285,8 @@ button[name='works-filter']:focus {
   border-radius: 4px;
   border: 0 solid #ffffff;
   padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.primary {
@@ -296,6 +298,7 @@ button[name='works-filter']:focus {
   letter-spacing: var(--letter-spreding-for-headers);
   padding: 10px 32px;
   margin-top: var(--standard-margin);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 button.inactive {
@@ -386,6 +389,10 @@ button.inactive {
 .work-list li {
   margin-left: var(--standard-margin);
   flex-basis: calc(100% / 3 - var(--standard-margin));
+}
+
+.work-list li:first-child {
+  margin-left: 0;
 }
 
 .team {
