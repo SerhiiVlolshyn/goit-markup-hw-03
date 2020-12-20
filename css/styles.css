@@ -114,7 +114,7 @@ nav {
 }
 
 header .logo {
-  margin: 24px 0 25px 0;
+  padding: 24px 0 25px 0;
 }
 
 .logotop {
@@ -134,8 +134,8 @@ header .logo {
   font-weight: 500;
   color: var(--main-text-color);
   text-decoration: none;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .studio-link {
@@ -169,7 +169,11 @@ footer {
   min-width: var(--site-width);
 }
 
-.footer-contacts li {
+footer ul {
+  padding-top: 9px;
+}
+
+.footer-contacts li + li {
   margin-top: 9px;
 }
 
@@ -317,12 +321,10 @@ button.inactive {
 
 .banner {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: var(--important-background-color);
-  min-width: var(--site-width);
+  max-width: var(--site-width);
 }
 
 .banner .container {
@@ -430,6 +432,9 @@ button.inactive {
 .team h3 {
   margin: 0 auto;
 }
+.team p {
+  margin-top: 10px;
+}
 
 .advantages-list,
 .team-list {
@@ -486,6 +491,12 @@ button.inactive {
 }
 
 .portfolio-item:first-child {
+  margin-left: 0;
+}
+
+/* чистим все левые элементы от левого падинга */
+
+.portfolio-item:nth-child(3n -2) {
   margin-left: 0;
 }
 
