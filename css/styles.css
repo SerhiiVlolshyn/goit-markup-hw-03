@@ -331,11 +331,17 @@ button.inactive {
 }
 
 .advantages p {
+  margin-top: 10px;
   color: var(--regular-text-color);
   line-height: 1.71;
 }
 
-.advantages h3 {
+.advantages-list h3 {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: var(--common-font-size);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
