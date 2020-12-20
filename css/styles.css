@@ -10,6 +10,14 @@ html {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   /* База */
 
@@ -453,6 +461,7 @@ button.inactive {
 }
 
 .portfolio-item .container {
+  flex-direction: column;
   margin: 20px 24px;
   width: 370px;
 }
