@@ -151,15 +151,12 @@ header .logo {
   margin-left: var(--margin-header);
 }
 
-.header-mail {
-  margin-left: 331px;
-}
-
 .header-tel {
   margin-left: var(--margin-header);
 }
 
 .contacts.header-element {
+  margin-left: auto;
   margin-right: 15px;
 }
 
