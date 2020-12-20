@@ -156,8 +156,9 @@ footer a {
 }
 
 .footer-container {
-  min-width: var(--site-width);
+  width: var(--site-width);
   padding-left: 15px;
+  margin: 0 auto;
 }
 
 .footer-address {
@@ -315,7 +316,7 @@ button.inactive {
 }
 
 .advantages {
-  padding: var(--vertical-distance) 0;
+  padding: var(--vertical-distance) 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -329,18 +330,22 @@ button.inactive {
   text-transform: uppercase;
 }
 
-.team .list,
-.abought-work .list {
-  display: flex;
-  justify-content: center;
-}
-
 .advantages-list-item {
   margin-left: var(--standard-margin);
 }
 
 .advantages-list-item:first-child {
   margin-left: 0;
+}
+
+.abought-work {
+  padding-top: var(--vertical-distance);
+}
+
+.team .list,
+.abought-work .list {
+  display: flex;
+  justify-content: center;
 }
 
 .worklist-container {
@@ -368,7 +373,7 @@ button.inactive {
 }
 
 .team-list {
-  margin-top: var(--standard-margin);
+  margin-top: 50px;
 }
 
 .team li {
