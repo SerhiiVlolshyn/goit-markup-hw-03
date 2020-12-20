@@ -340,13 +340,22 @@ button.inactive {
   margin-top: 94px;
 }
 
+.worklist-container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .work-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-left: -30px;
 }
 
 .work-list li {
   margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .team {
