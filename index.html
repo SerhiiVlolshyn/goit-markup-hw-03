@@ -17,26 +17,35 @@
 <body>
     <!--Начало шапки-->
     <header>
-        <nav class="header-element"> <!--Лого сайта-->
-        <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
-        <ul class="header-element navigation list"> <!--Панель навигации-->
-            <li class="header-element studio-link"><a class="header-element current header-link" href="./">Студия</a></li>
-            <li class="header-element portfolio-link"><a class="header-element header-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-element contacts-link"><a class="header-element header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
-        </ul>
+        <div class="container">
+            <nav class="header-element">
+            <!--Лого сайта-->
+            <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
+            <ul class="header-element navigation list">
+                <!--Панель навигации-->
+                <li class="header-element studio-link"><a class="header-element current header-link" href="./">Студия</a></li>
+                <li class="header-element portfolio-link"><a class="header-element header-link"
+                        href="./portfolio.html">Портфолио</a></li>
+                <li class="header-element contacts-link"><a class="header-element header-link" href="./">Контакты</a></li>
+                <!--Нужна ссылка/переделать на кнопку-->
+            </ul>
         </nav>
-        <ul class="contacts list header-element"><!--строка контактов--> 
-            <li class="header-element header-mail"><a class="header-element header-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-            <li class="header-element header-tel"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11 11</a></li>
+        <ul class="contacts list header-element">
+            <!--строка контактов-->
+            <li class="header-element header-mail"><a class="header-element header-link"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-element header-tel"><a class="header-element header-link" href="tel:+380961111111">+38096 111 11
+                    11</a></li>
         </ul>
+    </div>
     </header>
     <!--Конец шапки-->
 
     <main class="main-index">
     <!--Перый блок-->
     <section class="banner main-index-element">
-        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button primary" type="button"> Заказать услугу</button>
+        <div class="container"><h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="button primary" type="button"> Заказать услугу</button></div>
     </section>
     <!-- конец первого блока начало второго-->
     <section class="advantages main-index-element">
@@ -75,6 +84,7 @@
 
     <!-- Подвал -->
     <footer>
+        <div class="container">
         <a class="logo" href="/">Web<span class="logobot">Studio</span></a>
         <div class="footer-contacts container">
             <address>г. Киев, пр-т Леси Украинки, 26</address>
@@ -82,6 +92,7 @@
         <li><a href="mailto:info@example.com">info@example.com</a></li>
         <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
+    </div>
     </div>
     </footer>
     <!--Конец подвала-->

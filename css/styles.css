@@ -63,12 +63,8 @@ body {
 
 /* Головняк */
 header {
-  display: flex;
-
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
-  width: 1170px;
-  margin: auto;
 }
 
 nav .current {
@@ -78,6 +74,7 @@ nav .current {
 nav {
   width: 530px;
   font-weight: 500;
+  margin-left: 15px;
 }
 
 /* делаем красивое лого */
@@ -136,13 +133,19 @@ footer .logo {
   margin-left: 50px;
 }
 
+.contacts.header-element {
+  margin-right: 15px;
+}
+
 /* Подвал */
 footer {
-  display: flex;
-  flex-direction: column;
   background-color: var(--important-background-color);
   padding: 60px 0;
-  padding-left: 215px;
+  min-width: 1200px;
+}
+
+footer .container {
+  width: 1200px;
 }
 
 .footer-contacts {
@@ -151,6 +154,14 @@ footer {
 
 .footer-contacts li {
   margin-top: 9px;
+}
+
+/* Конец подвала */
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin: auto;
 }
 
 .main-title {
@@ -268,10 +279,6 @@ button[name='works-filter']:focus {
   margin-top: 30px;
 }
 
-.button.primary:hover,
-.button.primary:focus {
-}
-
 button.inactive {
   color: var(--main-text-color);
   background-color: var(--inactive-background-color);
@@ -293,12 +300,19 @@ button.inactive {
   align-items: center;
   text-align: center;
   background-color: var(--important-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  min-width: 1200px;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto;
+  width: 696px;
 }
 
 .advantages {
-  margin-top: 94px;
+  padding: 94px 0;
   display: flex;
   justify-content: center;
 }
@@ -322,6 +336,10 @@ button.inactive {
   margin-left: 30px;
 }
 
+.advantages-list-item:first-child {
+  margin-left: 0;
+}
+
 .abought-work {
   margin-top: 94px;
 }
@@ -338,6 +356,7 @@ button.inactive {
 .team {
   margin-top: 94px;
   padding: 94px 215px;
+  min-width: 1200px;
 }
 
 .team-list {
@@ -359,14 +378,15 @@ button.inactive {
 }
 
 .team .container {
+  width: 270px;
   padding: 30px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .team p,
 .team h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .advantages-list,
@@ -379,6 +399,12 @@ button.inactive {
 .team-member {
   display: inline-block;
   width: 270px;
+}
+
+.team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Элементы портфолио */
@@ -399,12 +425,10 @@ button.inactive {
   margin-left: 8px;
 }
 
-.portfolio-innerheit {
+.container .portfolio-innerheit {
   display: flex;
   flex-wrap: wrap;
-  margin-top: clac(50px - 30px);
-  margin-left: calc(215px - 30px);
-  margin-right: 215px;
+  margin-top: 20px;
 }
 
 .portfolio-item {
@@ -412,6 +436,12 @@ button.inactive {
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eeeeee;
+  width: 370px;
+}
+
+.portfolio-item .container {
+  margin: 20px 24px;
+  width: 370px;
 }
 
 .portfolio-innerheit a:visited {
