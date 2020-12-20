@@ -151,6 +151,7 @@ header .logo {
 footer {
   background-color: var(--important-background-color);
   padding: 60px 0;
+  margin-top: var(--vertical-distance);
   min-width: var(--site-width);
 }
 
@@ -376,7 +377,7 @@ button.inactive {
 
 .team {
   margin-top: var(--vertical-distance);
-  padding: var(--vertical-distance) 215px;
+  padding: var(--vertical-distance) 0 0 0;
   min-width: var(--site-width);
 }
 
