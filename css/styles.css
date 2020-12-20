@@ -166,7 +166,6 @@ header .logo {
 footer {
   background-color: var(--important-background-color);
   padding: 60px 0;
-  margin-top: var(--vertical-distance);
   min-width: var(--site-width);
 }
 
@@ -333,6 +332,7 @@ button.inactive {
 
 .advantages {
   padding-top: var(--vertical-distance);
+  padding-bottom: var(--vertical-distance);
   display: flex;
   justify-content: center;
 }
@@ -361,7 +361,7 @@ button.inactive {
 }
 
 .abought-work {
-  padding-top: var(--vertical-distance);
+  padding-bottom: var(--vertical-distance);
 }
 
 .team .list,
@@ -389,9 +389,9 @@ button.inactive {
 }
 
 .team {
-  margin-top: var(--vertical-distance);
   padding: var(--vertical-distance) 0 0 0;
   min-width: var(--site-width);
+  padding-bottom: var(--vertical-distance);
 }
 
 .team-list {
@@ -444,6 +444,10 @@ button.inactive {
 
 /* Элементы портфолио */
 
+.portfolio-main {
+  padding-bottom: var(--vertical-distance);
+}
+
 .filtres {
   display: flex;
   justify-content: center;
@@ -454,6 +458,10 @@ button.inactive {
 
 .filtres li {
   margin-left: 8px;
+}
+
+.filtres li:first-child {
+  margin-left: 0;
 }
 
 .container .portfolio-innerheit {
@@ -468,6 +476,10 @@ button.inactive {
   flex-basis: calc(100% / 3 - var(--standard-margin));
   border: 1px solid #eeeeee;
   width: 370px;
+}
+
+.portfolio-item:first-child {
+  margin-left: 0;
 }
 
 .portfolio-item .container {
