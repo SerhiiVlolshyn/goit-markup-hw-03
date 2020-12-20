@@ -13,9 +13,15 @@ html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 :root {
@@ -80,6 +86,7 @@ body {
 header {
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
+  border: 1px solid #ececec;
 }
 
 nav .current {
@@ -100,6 +107,7 @@ nav {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -118,6 +126,14 @@ header .logo {
 .header-element {
   display: flex;
   padding-left: 0;
+}
+
+.header-link {
+  font-weight: 500;
+  color: var(--main-text-color);
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .studio-link {
@@ -195,7 +211,7 @@ footer a {
 
 /* заставляем адрес выглядеть правильно */
 
-address {
+footer address {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--white-color);
@@ -209,14 +225,6 @@ address {
 }
 
 /* управляем внешностью ссылок */
-
-.header-link {
-  font-weight: 500;
-  color: var(--main-text-color);
-  text-decoration: none;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 
 .contacts a {
   color: var(--regular-text-color);
@@ -436,10 +444,6 @@ button.inactive {
 }
 
 /* Элементы портфолио */
-
-.portfolio-hr {
-  border: 1px solid #ececec;
-}
 
 .filtres {
   display: flex;
