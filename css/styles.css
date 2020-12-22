@@ -128,17 +128,16 @@ header .logo {
   padding-left: 0;
 }
 
+.header-element.navigation.list {
+  margin-left: 93px;
+}
+
 .header-link {
   font-weight: 500;
   color: var(--main-text-color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.studio-link {
-  margin: auto 0;
-  margin-left: 93px;
 }
 
 .portfolio-link {
@@ -168,7 +167,7 @@ footer {
 }
 
 footer ul {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-contacts li + li {
@@ -334,8 +333,6 @@ button.inactive {
 .advantages {
   padding-top: var(--vertical-distance);
   padding-bottom: var(--vertical-distance);
-  display: flex;
-  justify-content: center;
 }
 
 .advantages p {
@@ -498,7 +495,7 @@ button.inactive {
 
 .portfolio-item .container {
   flex-direction: column;
-  margin: 20px 24px;
+  padding: 20px 24px;
   width: 370px;
 }
 
